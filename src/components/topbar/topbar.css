@@ -1,0 +1,71 @@
+.Container {
+    align-items: center;
+    display: flex;
+    height: 73px;
+    background-color: rgb(30, 31, 35);
+    border-color: #2e2f36;
+    width: 1150px;
+    padding: 0px 28px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+  }
+  
+  .Container .logo{
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    position: relative;
+    width: 449px;
+  }
+  .Container .bottonArrow {
+    flex: 0 0 auto;
+    position: relative;
+    border-radius: 50%;
+    background: linear-gradient(#AD2D14 50%, #F42E07 50%);
+  }
+  
+  .Container .text {
+    color: #ffffff;
+    font-family: "Poppins", Arial, Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .Container .topbar-right {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .Container .icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    justify-content: end;
+  }
+  
+  .userIcon {
+    margin-right: 15px;
+    border-radius: 50%;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    justify-content: center;
+    color: #ffffff;
+  }
+  

@@ -1,0 +1,65 @@
+:root {
+  /* Colors */
+  --white: #f5f5f5;
+  --black: #000000;
+  --gradientbutton: linear-gradient(
+    180deg,
+    rgba(173, 45, 20, 1) 0%,
+    rgba(244, 46, 7, 1) 100%
+  );
+  --orange: #fe2e05;
+  --gradientbackground: linear-gradient(
+    180deg,
+    rgba(46, 47, 54, 1) 0%,
+    rgba(23, 24, 28, 1) 100%
+  );
+
+  --font-poppins: Poppins;
+  
+  /* font sizes */
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-white1: #fff;
+  --white: #f5f5f5;
+  --orange: #fe2e05;
+  --gray-gray-300: #75767d;
+
+  /* Gaps */
+  --gap-5xl: 24px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-lgi: 19px;
+  --padding-10xs: 3px;
+
+  /* Border radiuses */
+  --br-27xl: 46px;
+  --yellow: #e9b425;
+  --gray-border: transparent;
+  --gray-gray-900: #17181c;
+  --gray-gray-700: #1e1f23;
+  --gray-gray-650: #27282f;
+  --gray-gray-600: #2e2f36;
+  --gray-gray-300: #75767d;
+  --gray-gray-200: #a1a3a7;
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, Poppins BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

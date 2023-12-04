@@ -1,0 +1,23 @@
+.sidebar{
+    flex: 3;
+    height: calc(100vh - 50px);
+    background-color: rgb( 39, 40, 47);
+    overflow-y: scroll;
+    position: sticky;
+}
+
+.sidebarWrapper{
+    padding: 20px;
+}
+
+.sidebarList{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebarListItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
