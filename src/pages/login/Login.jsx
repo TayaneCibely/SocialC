@@ -1,6 +1,6 @@
 import { useContext, useRef } from "react";
 import "./login.css";
-import { loginCall } from "../../context/apiCalls";
+import { loginCall } from "../../apiCalls";
 import { AuthContext } from "../../context/AuthContext";
 import { CiRedo } from "react-icons/ci";
 
