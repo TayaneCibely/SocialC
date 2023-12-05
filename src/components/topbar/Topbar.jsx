@@ -1,31 +1,32 @@
 import React from "react";
-import {
-  PiArrowFatRightFill,
-  PiGlobeHemisphereEastThin,
-  PiBell,
-} from "react-icons/pi";
 import "./topbar.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../context/AuthContext"
 
 export default function Topbar() {
+  const {user} = useContext(AuthContext);
+  const PF = process.env.REAT_APP_PUBLIC_FOLDER;
+
   return (
     <div className="Container">
       <div className="logo">
         <Link className="bottonPost">
-          <PiArrowFatRightFill />
+          <img src="assets/ArrowFatRight.svg" alt="" />
         </Link>
         <div className="text">SocialCompass</div>
       </div>
       <div className="topbar-right">
         <div className="icon">
-          <PiGlobeHemisphereEastThin />
+          <img src="assets/GlobeHemisphereEast.svg" alt="" />
         </div>
         <div className="icon">
-          <PiBell />
+          <img src="/assets/Bell.svg" alt="" />
         </div>
-        <div className="text">Tayane Cibely</div>
+        <Link className="name" to={`/profile/${user.username}`}/>
         <img
-          src={process.env.PUBLIC_URL + "/assets/userIcon.svg"}
+          src={ user.profilePicture
+            ? PF + user.profilePicture : PF + "userIcon.png"}
           alt=""
           className="userIcon"
         />
@@ -33,3 +34,4 @@ export default function Topbar() {
     </div>
   );
 }
+

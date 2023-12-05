@@ -92,6 +92,14 @@
   border: 1px solid #ffffff;
 }
 
+.my-icon{
+  padding-right: 30px; 
+  background-image: url("../../../public/assets/person.svg"); 
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+}
+
 .loginButton {
   display: flex;
   padding: 22px 150px;

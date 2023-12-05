@@ -1,3 +1,5 @@
 .homeContainer{
     background-color: black;
+    display: flex;
+    width: 100%;
 }
