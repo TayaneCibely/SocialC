@@ -1,6 +1,7 @@
 import { useContext, useRef } from "react";
 import "./login.css";
 import { loginCall } from "../../apiCalls";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { CiRedo } from "react-icons/ci";
 
@@ -8,13 +9,13 @@ import { CiRedo } from "react-icons/ci";
 export default function Login() {
   const email = useRef();
   const password = useRef();
-  const { isFetching, dispartch } = useContext(AuthContext);
+  const { isFetching, dispatch } = useContext(AuthContext);
 
   const handleClick = (e) => {
     e.preventDefault();
     loginCall(
       { email: email.current.value, password: password.current.value },
-      dispartch
+      dispatch
     );
   };
 
@@ -42,7 +43,7 @@ export default function Login() {
                 )}
                 </button>
               <span className="loginRegister">
-                Novo por aqui? <b>Registre-se</b>
+                  Novo por aqui? <Link to="/register"><b className="registre-se">Registre-se</b></Link>
               </span>
             </form>
           </div>
